@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Member Recognizer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+
+<body>
+    <CENTER>
+        <div class="topic">
+            <h1>IMAGE RECOGNITION</h1>
+        </div>
+        <br>
+    </CENTER>
+    <span>
+        <p style="font-size:x-large;margin-left: 10px;font-weight: bold;">Family Members</p>
+        <ol class="family_member_list">
+            <li>Abbu</li>
+            <li>Mummy</li>
+            <li>Hamzah</li>
+            <li>Asiya</li>
+        </ol>
+    </span>
+    <center>
+        <h3 style="color: white;">Your Video below ⬇</h3>
+        <br>
+        <div class="webcam" id="camera"></div><br><br>
+        <div class="webcam1" id="output"><br><br><br><br>
+            <p class="webcam12">Output</p>
+        </div><br><br><br><br><br><br><br>
+        <button class="btn btn-primary" onclick="take_snapshot()">Capture Image</button><br><br>
+        <button class="btn btn-success" onclick="result()">Identify Image</button><br><br>
+        <p style="font-size: 22px;color: white;">Family Member Name: <span id="object_identify"
+                style="font-size: 22px;color: yellow;"></span></p>
+        <p style="font-size: 22px;color: white;">Accuraccy: <span id="object_identify_accuracy"
+                style="font-size: 22px;color: yellow;"></span></p>
+    </CENTER>
+    <script src="main.js"></script>
+</body>
+
+</html>
